@@ -1,0 +1,19 @@
+<?= $this->extend('Template/template'); ?>
+
+
+<?= $this->section('content'); ?>
+
+<?= $this->endSection(); ?>
+Mast=reviewer
+mmt = editor
+mat = makelar
+sts_payment = 0 //belom dibayar
+sts_payment = -1 //menunggu konfirmasi pembayaran dari makelar
+sts_payment = 1 //menunggu di ambil oleh reviewer
+if id_reviewer = -1// task rejected
+if id_reviewer != 0,// task accepted 
+sts_artikel = 2 // reviewed by reviewer
+sts_artikel = 3 //confirmed by makelar
+sts_artikel back to 1 //rejected by makelar
+sts_artikel = 4 // confirmed by editor [finished]
+sts_artikel = 5 // transfer funds to reviewer done
